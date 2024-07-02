@@ -1,49 +1,63 @@
-// console.log("hi");
+// Zeilenkommentar | Strg + #
 
 /**
+ * 
  * 
  * Block-Kommentar
  * 
  * 
- * 
  */
-// console.log("hi");
-// 
 
-// console.log(hi);
+/***** Variablen 01 *******/
 
+// console.log("Hi");
+// console.log(Hi);
 
 /* Deklaration + Wertzuweisung I */
 
-//let firstName; //Deklaration (Definition)
-//console.log(firstName); // Ausgabe
-//firstName = "Max"; // Wertzuweisung assignment
+// let firstName; // Deklaration (Definition)
+// console.log(firstName); // Ausgabe
+// firstName = "Max"; // Wertzuweisung | assignment
+// console.log(firstName); // Ausgabe
+// let familyName = "Mütze"; // Deklaration + Wertzuweisung
+// console.log("Hi, ich bin " + firstName + " " + familyName + "!"); // --> Hi, ich bin Max Mütze!
 
-//console.log(firstName); // Ausgabe
-//let familyName = "Mütze"; // * Deklaration + Wertzuweisung I */
-//console.log("Hi, ich bin " + firstName +" " + familyName + "!"); //Ausgabe  -- Hi, ich bin Max Mütze
+/*  
+    Wertzuweisung II + Datentypen 
+    JS ist ein untypisierte Sprache!
+*/
 
-let test;
-//test = "hi";
-//test = 2;
+// let test; // Deklaration
 
+// /* undefined */
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("----------------")
 
+// test = "hi"; // string
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("----------------")
 
-console.log("Datentyp:" + typeof test); // Ausgabe Datentyp
-console.log("Inhalt:" + test); // Ausgabe Inhalt
-console.log("----------------")
+// test = 2; // number
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("----------------")
 
-test = "hi"; // strings
-console.log("Datentyp:" + typeof test); // Ausgabe Datentyp
-console.log("Inhalt:" + test); // Ausgabe Inhalt
-console.log("----------------")
+// test = true; // boolean
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("----------------")
 
-test =2; // number
-console.log("Datentyp:" + typeof test); // Ausgabe Datentyp
-console.log("Inhalt:" + test); // Ausgabe Inhalt
-console.log("----------------")
+/* Variablen vs. Konstanten in JS */
 
-test = true
-console.log("Datentyp:" + typeof test); // Ausgabe Datentyp
-console.log("Inhalt:" + test); // Ausgabe Inhalt
-console.log("----------------")
+// Variable
+let test; // Variable : Deklaration
+test = "hi"; // Wertzuweisung (Initialisierung)
+test = "hello"; // Überschreiben
+console.log("Inhalt: " + test); // Ausgabe 
+
+// Konstante
+const test2 = "Hi!"; // Deklaration + Wertzuweisung gemeinsam !
+test2 = "hello"; // Laufzeit-Fehler !! 
+console.log("Inhalt: " + test2);
